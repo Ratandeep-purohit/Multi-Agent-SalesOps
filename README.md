@@ -1,3 +1,13 @@
+---
+title: Multi-Agent SalesOps Arena
+emoji: ⚡
+colorFrom: purple
+colorTo: pink
+sdk: docker
+app_port: 7860
+pinned: false
+---
+
 # Multi-Agent SalesOps Arena
 
 > **"Multi-Agent SalesOps Arena is not a CRM app. It is an advanced Enterprise Reinforcement Learning environment where AI agents develop optimal business decision policies through interaction, Bellman Q-Learning, and Human-in-the-Loop conflict resolution."**
