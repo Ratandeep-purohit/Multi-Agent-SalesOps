@@ -1,0 +1,32 @@
+env_id: "multi-agent-salesops-v1"
+name: "Multi-Agent SalesOps Arena"
+description: "Enterprise Reinforcement Learning environment for testing multi-agent arbitration and Bellman Q-Learning on business policies."
+version: "3.0.0"
+built_with: "OpenEnv latest release"
+
+observation_space: 
+  type: "Dict"
+  fields:
+    deal_value: "Continuous(0.0, 100000.0)"
+    risk_score: "Continuous(0.0, 1.0)"
+    lead_score: "Continuous(0.0, 1.0)"
+    urgency: "Continuous(0.0, 1.0)"
+    acquisition_cost: "Continuous(0.0, 5000.0)"
+
+action_space:
+  type: "Discrete(8)"
+  actions:
+    - "pursue_lead"
+    - "nurture_lead"
+    - "reject_lead"
+    - "escalate_to_enterprise"
+    - "offer_discount"
+    - "request_more_info"
+    - "notify_compliance"
+    - "schedule_demo"
+
+reward_range: "(-inf, inf)"
+components:
+  - "Multi-Agent Arbitration Engine"
+  - "Economy-Aware Reward Engine"
+  - "Human-in-the-Loop Override"

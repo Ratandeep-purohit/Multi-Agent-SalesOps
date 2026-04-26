@@ -356,10 +356,13 @@ def run_training(
         json.dump(all_logs[-200:], f, indent=2)   # keep last 200 logs
 
     curve_path  = tracker.plot_reward_curve()
+    loss_path   = tracker.plot_loss_curve()
     comp_path   = tracker.plot_comparison_chart()
 
     if curve_path:
         ok(f"  Reward curve saved: {curve_path}")
+    if loss_path:
+        ok(f"  Loss curve saved: {loss_path}")
     if comp_path:
         ok(f"  Comparison chart saved: {comp_path}")
 
