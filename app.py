@@ -63,6 +63,20 @@ code { color: #e2e8f0 !important; }
 /* Sidebar (if ever shown) */
 [data-testid="stSidebar"] * { color: rgba(255,255,255,0.8) !important; }
 
+/* === MARKDOWN OVERRIDES (DOCS) === */
+[data-testid="stMarkdownContainer"] pre, [data-testid="stMarkdownContainer"] code {
+  background-color: rgba(255,255,255,0.06) !important;
+  color: #e2e8f0 !important;
+  border-radius: 6px !important;
+}
+[data-testid="stMarkdownContainer"] blockquote {
+  border-left: 4px solid #a78bfa !important;
+  background: rgba(255,255,255,0.03) !important;
+  color: rgba(255,255,255,0.8) !important;
+  padding: 10px 20px !important;
+  margin: 1.5rem 0 !important;
+}
+
 /* === ANIMATED BACKGROUND === */
 [data-testid="stAppViewContainer"] {
   background: #050508 !important;
@@ -1066,6 +1080,7 @@ elif logical_page == "docs":
         with open(file_path, "r", encoding="utf-8") as f:
             content = f.read()
         
+        # Render actual markdown content
         with st.container():
             st.markdown(content)
     else:
