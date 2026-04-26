@@ -12,6 +12,8 @@ pinned: false
 
 > **"Multi-Agent SalesOps Arena is not a CRM app. It is an advanced Enterprise Reinforcement Learning environment where AI agents develop optimal business decision policies through interaction, Bellman Q-Learning, and Human-in-the-Loop conflict resolution."**
 
+🚀 **[Live Demo on Hugging Face Spaces](https://huggingface.co/spaces/Ratandeep-purohit/Multi-Agent-SalesOps)**
+
 ---
 
 ## Problem Statement
