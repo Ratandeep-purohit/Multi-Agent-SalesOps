@@ -54,11 +54,11 @@ A single AI agent — no matter how smart — cannot simultaneously optimize all
        └──────────────┬────────────────────────┘
                       │  Recommendations + Confidence
                       ▼
-       ┌───────────────────────────────────────┐
-       │        ARBITRATION ENGINE             │
-       │  Weighted voting + risk/budget dampeners │
-       │  → Final action + explanation         │
-       └──────────────┬────────────────────────┘
+       ┌─────────────────────────────────────────┐
+       │        ARBITRATION ENGINE               │
+       │  Weighted voting + risk/budget dampeners│
+       │  → Final action + explanation           │
+       └──────────────┬──────────────────────────┘
                       │  Final Action
                       ▼
        ┌───────────────────────────────────────┐
