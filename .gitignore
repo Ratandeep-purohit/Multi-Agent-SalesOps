@@ -1,0 +1,12 @@
+# Hugging Face Spaces ignores these
+outputs/memory.json
+outputs/hf_cache.json
+outputs/logs.json
+outputs/training_results.json
+outputs/*.png
+Results_Evidence/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.pytest_cache/
